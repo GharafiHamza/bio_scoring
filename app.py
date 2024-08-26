@@ -140,7 +140,7 @@ if st.session_state.fish_species:
     final_star_count, final_star_display = calculate_final_star_score(margalef_stars, pielou_stars)
 
     # Display final score at the top
-    st.markdown(f"<h1 style='text-align: center; color: red;'>{final_star_display}</h1>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='text-align: center; color: grey;'>Final Score: {final_star_display}</h1>", unsafe_allow_html=True)
 else:
     st.warning("Please upload a file or add a species to begin calculations.")
 
